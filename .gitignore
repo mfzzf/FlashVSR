@@ -19,3 +19,4 @@ venv/
 # IDE files
 .vscode/
 .idea/
+.ace-tool/
