@@ -13,6 +13,11 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
+RUN printf "%s\n" \
+    "[global]" \
+    "index-url = https://pypi.internal-mirrors.ucloud.cn/simple" \
+    > /etc/pip.conf
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     git \
