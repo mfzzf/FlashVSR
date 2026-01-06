@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM pytorch/pytorch:2.6.0-cuda12.4-cudnn9-devel
+FROM uhub.service.ucloud.cn/clientfzzf/pytorch:2.6.0-cuda12.4-cudnn9-devel
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
